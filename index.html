@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dental Hospital - Book Appointment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      padding: 30px;
+      margin: 0;
+    }
+
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .navbar {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .navbar button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #3498db;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar button:hover {
+      background-color: #2980b9;
+    }
+
+    .section {
+      max-width: 700px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button[type="submit"] {
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    button[type="submit"]:hover {
+      background: #219150;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🦷 Dr.Kavitha Dental Hospital Appointment</h1>
+
+  <!-- Navigation Buttons -->
+  <div class="navbar">
+    <button onclick="scrollToSection('home')">🏠 Home</button>
+    <button onclick="scrollToSection('services')">🛠️ Services</button>
+    <button onclick="scrollToSection('appointment')">📅 Book Appointment</button>
+    <button onclick="scrollToSection('contact')">📞 Contact Us</button>
+  </div>
+
+  <!-- Home Section -->
+  <div class="section" id="home">
+    <h2>Welcome to Dr.Kavitha Dental Hospital</h2>
+    <p>Providing quality dental care with compassion and expertise. Book your appointment with our experienced dentists today!</p>
+  </div>
+
+  <!-- Services Section -->
+  <div class="section" id="services">
+    <h2>🛠️ Our Dental Services</h2>
+    <ul>
+      <li>Dental Cleaning (Scaling & Polishing)</li>
+      <li>Tooth Filling (Cavity Treatment)</li>
+      <li>Root Canal Treatment (RCT)</li>
+      <li>Dental Crowns & Bridges</li>
+      <li>Tooth Extraction</li>
+      <li>Wisdom Tooth Surgery</li>
+      <li>Braces & Orthodontic Treatments</li>
+      <li>Teeth Whitening</li>
+      <li>Dental Implants</li>
+      <li>Pediatric Dentistry (Kids Dental Care)</li>
+      <li>Gum Disease Treatment</li>
+      <li>Full Mouth Rehabilitation</li>
+    </ul>
+  </div>
+
+  <!-- Appointment Form -->
+  <div class="section" id="appointment">
+    <h2>📅 Book Your Appointment</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+      <label for="date">Appointment Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" required>
+
+      <label for="reason">Reason for Visit:</label>
+      <textarea id="reason" placeholder="Describe your dental issue" rows="4"></textarea>
+
+      <button type="submit">Book Appointment</button>
+    </form>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section" id="contact">
+    <h2>📞 Contact Us</h2>
+    <p>Call us for any queries or to book via phone:</p>
+    <p><strong>Phone:</strong> 7396222120</p>
+    <p><strong>Email:</strong> deekshithgoud@gmail.com</p>
+    <p><strong>Address:</strong> Dr.Kavitha Dental Hospital, Hyderabad, India</p>
+  </div>
+
+  <!-- Script to Scroll to Section -->
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
